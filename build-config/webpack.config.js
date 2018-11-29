@@ -3,7 +3,7 @@ const path = require('path');
 'use strict';
 module.exports = {
     mode: 'development',
-    entry: ['babel-polyfill', './src/app.jsx'],
+    entry: ['babel-polyfill', './src/app.js'],
     output: {
         path: __dirname + '/build/assets/bundle',
         filename: "bundle.js",
@@ -24,6 +24,6 @@ module.exports = {
         rules: require("./rules.config"),
     },
     resolve: {
-        extensions: ['.js', '.jsx']
+        extensions: ['.js']
     }
 }

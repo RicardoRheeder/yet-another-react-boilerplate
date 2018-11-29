@@ -4,7 +4,7 @@ var path = require("path");
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
-    entry: ['babel-polyfill', './src/app.jsx'],
+    entry: ['babel-polyfill', './src/app.js'],
     output: {
         path: path.resolve("build/assets/bundle"),
         filename: "bundle.js",
@@ -23,6 +23,6 @@ module.exports = {
         rules: require("./rules.config"),
     },
     resolve: {
-        extensions: ['.js', '.jsx']
+        extensions: ['.js']
     }
 }
